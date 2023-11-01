@@ -1,0 +1,17 @@
+#file: noinspection undefined
+server:
+  port: 8578
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/order_shipping_schema
+    username: root
+    password: bs@nDip1
+    #url: jdbc:mysql://${MYSQLHOST}:${MYSQLPORT}/${MYSQLDATABASE}
+    #username: ${MYSQLUSER}
+    #password: ${MYSQLPASSWORD}
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
